@@ -1,34 +1,34 @@
 {
 	"schemaVersion": 1,
-	"id": "template-modlibrary",
+	"id": "callisto",
 	"version": "${version}",
-	"name": "Template Modlibrary",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Callisto",
+	"description": "Name that comes from the Greek Kallisto. Translating to “most beautiful”.",
 	"authors": [
-		"Me!"
+		"Addie"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/template-modlibrary/icon.png",
+	"license": "ARR",
+	"icon": "assets/callisto/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.lib.TemplateModlibrary"
+			"com.lib.Callisto"
 		],
 		"client": [
-			"com.lib.TemplateModlibraryClient"
+			"com.lib.CallistoClient"
 		],
 		"fabric-datagen": [
-			"com.lib.TemplateModlibraryDataGenerator"
+			"com.lib.CallistoDataGenerator"
 		]
 	},
 	"mixins": [
-		"template-modlibrary.mixins.json",
+		"callisto.mixins.json",
 		{
-			"config": "template-modlibrary.client.mixins.json",
+			"config": "callisto.client.mixins.json",
 			"environment": "client"
 		}
 	],

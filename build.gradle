@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"template-modlibrary" {
+		"callisto" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -86,11 +86,11 @@ publishing {
 		}
 	}
 
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		maven {
-			name = "ci"
-			url = providers.environmentVariable("CI_MAVEN_PATH")
-		}
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
 	}
-
 }
