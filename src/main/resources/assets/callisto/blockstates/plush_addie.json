@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "facing=north,squished=false": { "model": "callisto:block/plush_addie" },
+    "facing=north,squished=true":  { "model": "callisto:block/plush_addie_squished" },
+
+    "facing=south,squished=false": { "model": "callisto:block/plush_addie", "y": 180 },
+    "facing=south,squished=true":  { "model": "callisto:block/plush_addie_squished", "y": 180 },
+
+    "facing=east,squished=false":  { "model": "callisto:block/plush_addie", "y": 90 },
+    "facing=east,squished=true":   { "model": "callisto:block/plush_addie_squished", "y": 90 },
+
+    "facing=west,squished=false":  { "model": "callisto:block/plush_addie", "y": 270 },
+    "facing=west,squished=true":   { "model": "callisto:block/plush_addie_squished", "y": 270 }
+  }
+}
