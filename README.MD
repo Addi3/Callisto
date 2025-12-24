@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[<img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">](https://modrinth.com/mod/joyeuxlib) <!-- SVG version -->
+[<img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">](https://modrinth.com/mod/callisto-lib) <!-- SVG version -->
 [<img alt="fabric" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg">](https://fabricmc.net/) <!-- SVG version -->
 
 </div>
@@ -20,13 +20,13 @@
 ### Currently:
 - This adds a few providers and extra class that we will use in all our mods, this Library will save us the effort of coding the same things over and over for all our mods:
 
-    * Datagen providers include; SoundsProvider, RecipeProvider.
-    * Other stuff; DifferingHandModelItem.
+  * Datagen providers include; SoundsProvider, RecipeProvider.
+  * Other stuff; DifferingHandModelItem.
 
 ### Cool Extras!
 - This also adds a few "interactable" blocks, including;
 
-    * Plush of me (Addie)
+  * Plush of me (Addie)
 
 -------------
 <h2>
@@ -38,7 +38,7 @@
     Adding new features
 </h2>
 
-**If you want new features in the library, you can either suggest them to me OR make a PR (pull request) detailing the feature in full!** 
+**If you want new features in the library, you can either suggest them to me OR make a PR (pull request) detailing the feature in full!**
 
 
 -------------
@@ -51,4 +51,5 @@
   How to use Callisto!
 </h2>
 
-### This is how you add the library to your mod:
+### Here is the wiki, this provides all information on the library
+[WIKI HERE](https://addi3.github.io/callisto_wiki)

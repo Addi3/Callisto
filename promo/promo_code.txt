@@ -1,0 +1,1 @@
+[<img alt="lib" height="56" src="https://raw.githubusercontent.com/Addi3/callisto/master/promo/cozy_vector.svg">](https://modrinth.com/mod/callisto-lib)
