@@ -22,12 +22,8 @@ public class TooltipItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        handleTooltip(stack, tooltip);
-        super.appendTooltip(stack, world, tooltip, context);
-    }
-
-    private void handleTooltip(ItemStack stack, List<Text> tooltip) {
         if (!showTooltip) {
+            super.appendTooltip(stack, world, tooltip, context);
             return;
         }
 
@@ -36,6 +32,14 @@ public class TooltipItem extends Item {
                     Text.translatable("tooltip.callisto.holdformoreinfo")
                             .formatted(Formatting.GRAY, Formatting.ITALIC)
             );
+        } else {
+            appendShiftTooltip(stack, tooltip);
         }
+
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
+    protected void appendShiftTooltip(ItemStack stack, List<Text> tooltip) {
+
     }
 }
