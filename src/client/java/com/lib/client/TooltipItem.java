@@ -15,6 +15,10 @@ public class TooltipItem extends Item {
 
     private final boolean showTooltip;
 
+    public TooltipItem(Settings settings, boolean showTooltip) {
+        this(settings, "", showTooltip);
+    }
+
     public TooltipItem(Settings settings, String path, boolean showTooltip) {
         super(settings);
 
