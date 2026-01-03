@@ -16,29 +16,26 @@ public class TooltipItem extends Item {
     private final boolean showTooltip;
 
     public TooltipItem(Settings settings, boolean showTooltip) {
-        this(settings, "", showTooltip);
-    }
-
-    public TooltipItem(Settings settings, String path, boolean showTooltip) {
         super(settings);
-
         this.showTooltip = showTooltip;
     }
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        this.handleTooltip(stack, tooltip);
+        handleTooltip(stack, tooltip);
         super.appendTooltip(stack, world, tooltip, context);
     }
 
     private void handleTooltip(ItemStack stack, List<Text> tooltip) {
-        if (!showTooltip)
-            return;
-
-        if (!Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.callisto.holdformoreinfo").formatted(Formatting.GRAY)
-                    .formatted(Formatting.ITALIC));
+        if (!showTooltip) {
             return;
         }
-    }
 
+        if (!Screen.hasShiftDown()) {
+            tooltip.add(
+                    Text.translatable("tooltip.callisto.holdformoreinfo")
+                            .formatted(Formatting.GRAY, Formatting.ITALIC)
+            );
+        }
+    }
 }
